@@ -1,3 +1,183 @@
 body {
     background-color: white;
 }
+
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    
+
+    /*========== Colors ==========*/
+    /* Change favorite color */
+  
+
+    /* RGB color mode */
+    --first-color: #d91928;
+    --second-color:#616161;
+    --first-color-second: ;
+    --first-color-alt: ;
+    --first-color-lighter: ;
+    --title-color: ;
+    --text-color: ;
+    --text-color-light: ;
+    --input-color: ;
+    --body-color: ;
+    --container-color: ;
+
+    /*========== Font and typography ==========*/
+    --body-font: ;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: ;
+    --h1-font-size: ;
+    --h2-font-size: ;
+    --h3-font-size: ;
+    --normal-font-size: ;
+    --small-font-size: ;
+    --smaller-font-size: ;
+
+    /*========== Font weight ==========*/
+    --font-medium: ;
+    --font-semi-bold: ;
+
+
+    /*========== Header Elements ==========*/
+    --button-width: 200px ;
+    --submit-button-left:6%;
+    --menu-panel-h: 320px;
+    --menu-panel-w: 1200px;
+
+
+
+
+    /*========== z index ==========*/
+    --z-tooltip: ;
+    --z-fixed: ;
+    --z-modal: ;
+}
+
+
+.headerbtnfont
+{
+    font-family: Roboto;
+    color: white;
+    font-weight: 300;
+
+   
+   
+}
+
+.submitBtntext
+{
+    padding-top: 23rem;
+    padding-left: 1rem;
+
+}
+
+.registerBtntext
+{
+    padding-top: 25.5rem;
+    padding-left: 1rem;
+}
+.registerBtn
+{
+ 
+    height: 450px;
+    width: var(--button-width);
+    background-color: var(--second-color);
+    left:4%;
+    top:90px;
+    z-index: 1;
+    
+    transition: transform 250ms, z-index 250ms ;
+}
+
+.submitBtn
+{
+ 
+    height: 410px;
+    width: var(--button-width);
+    background-color: var(--first-color);
+    left: 6%;
+    top:60px;
+    z-index: 2;
+    transition: transform 250ms, z-index 250ms ;
+
+}
+
+.menuPanel
+{
+ 
+    height: var(--menu-panel-h);
+    width: var(--menu-panel-w);
+    background-color: #f5f7f6;
+    right: var(--menu-panel-w); 
+   
+    transition: right 700ms;
+
+}
+
+
+.menuPanelContainer
+{
+    
+    height: var(--menu-panel-h);
+    width: var(--menu-panel-w);
+
+    left:6%;
+    top:60px;
+    overflow: hidden;
+    z-index:0;
+    
+
+    transition: transform 250ms, z-index 250ms ;
+}
+.registerBtn:hover{
+
+    transform: scale(1.05);
+    z-index: 3;
+
+}
+
+.submitBtn:hover{
+
+    transform: scale(1.05);
+    z-index: 3;
+
+} 
+
+
+.menuBtn
+{
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: var(--first-color);
+    left: calc(var(--button-width) + 6.5%);
+    top:60px;
+    z-index:1;
+    transition: transform 250ms ;
+
+}
+
+.menuBtn:hover{
+
+    transform: scale(1.07);
+    
+
+}
+
+.logoHeader
+{
+ 
+    
+    width: calc(1* var(--button-width));
+    height: 90px;
+    background-repeat: no-repeat;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    left: 6%;
+    top:85px;
+    z-index: 7;
+    
+
+}
